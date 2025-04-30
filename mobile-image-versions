@@ -1,0 +1,15 @@
+Show on desktop only css
+@media screen and (max-width: 750px) {
+  .banner, slideshow-component {
+    display: none;
+  }
+}
+
+
+Show on mobile only css
+
+@media screen and (min-width: 750px) {
+  .banner, slideshow-component {
+    display: none;
+  }
+}
