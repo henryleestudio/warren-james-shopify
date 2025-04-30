@@ -1,0 +1,30 @@
+{% if template == 'index' %}
+ 
+<style>
+.shopify-section-group-header-group.announcement-bar-section{
+height: 5px;
+}
+.header-wrapper{
+position: absolute;
+width: 100%;
+background: transparent;
+}
+.header-wrapper .header{
+margin-top: 20px;
+}
+</style>
+ 
+{% endif %}
+ 
+CODE V2 : if the code above didnt work try the one below.
+{% if template == 'index' %}
+<style>
+#MainContent { margin-top: -133px; }
+@media (max-width: 767px) {
+#MainContent { margin-top: -107px !important; }
+}
+</style>
+{% endif %}
+<style>
+sticky-header { background: transparent !important; }
+</style>
