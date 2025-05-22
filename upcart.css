@@ -1,0 +1,20 @@
+/* UpCart code snippets */
+
+#CartPopup h3 {
+    color: #fff !important;
+}
+.upcart-product-title-link {
+    font-size: 2rem;
+}
+.UpcartDesignSettings__cartTextSubduedColor {
+    opacity: 1 !important;
+}
+.upcart-upsells-title {
+    font-size: 3rem;
+}
+.upcart-discount-code-text {
+    color: #fff;
+}
+.upcart-discount-code-icon  {
+    stroke: #fff;
+}
