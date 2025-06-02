@@ -1,11 +1,10 @@
 # import fonts to the shopify files, get the link and import it in the CSS
 
 @import url("https://use.typekit.net/vze1abq.css");
-
-@font-face {
+h1 {
   font-family: 'UniversLTStd-Bold';
-  src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/UniversLTStd-Bold.otf?v=1739996206');
 }
+
 @font-face {
   font-family: 'TT-Chocolates';
   src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/tt_chocolates_regular-webfont.woff2?v=1739996071');
@@ -18,13 +17,8 @@
 }
 
 @font-face {
-   font-family: 'gothic';
    src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/Blackiron.ttf?v=1748633177');
- }
-
-@font-face {
-   font-family: 'nafta';
-   src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/NaftaLight-Regular.ttf?v=1748657561');
+   font-family: 'gothic';
  }
 
 :root {
