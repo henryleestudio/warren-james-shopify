@@ -1,3 +1,5 @@
+# import fonts to the shopify files, get the link and import it in the CSS
+
 @import url("https://use.typekit.net/vze1abq.css");
 
 @font-face {
@@ -33,4 +35,15 @@
   --navigation-font-stack: 'TT-Chocolates' !important;
   --heading-font-case: lowercase !important;
   --label-font-case: lowercase !important;
+}
+
+# Customizer code for custom fonts
+
+.rich-text__heading {
+  font-family: "Bubbly", serif;
+}
+.rich-text__text {
+  font-family: "Beaches", serif;
+  line-height: 1;
+  font-size: 2rem;
 }
