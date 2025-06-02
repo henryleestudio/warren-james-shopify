@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/vze1abq.css");
+
+@font-face {
+  font-family: 'UniversLTStd-Bold';
+  src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/UniversLTStd-Bold.otf?v=1739996206');
+}
+@font-face {
+  font-family: 'TT-Chocolates';
+  src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/tt_chocolates_regular-webfont.woff2?v=1739996071');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'TT-Chocolates';
+  src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/tt_chocolates_demibold-webfont.woff2?v=1739996071');
+  font-weight: 600;
+}
+
+@font-face {
+   font-family: 'gothic';
+   src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/Blackiron.ttf?v=1748633177');
+ }
+
+@font-face {
+   font-family: 'nafta';
+   src: url('https://cdn.shopify.com/s/files/1/0708/1259/8558/files/NaftaLight-Regular.ttf?v=1748657561');
+ }
+
+:root {
+  --header-font-stack: 'TT-Chocolates' !important;
+  --body-font-stack: 'TT-Chocolates' !important;
+  --button-font-stack: 'TT-Chocolates' !important;
+  --label-font-stack: 'TT-Chocolates' !important;
+  --navigation-font-stack: 'TT-Chocolates' !important;
+  --heading-font-case: lowercase !important;
+  --label-font-case: lowercase !important;
+}
