@@ -1,0 +1,27 @@
+# Theme.liquid
+# add css file
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+    
+<body>
+# right underbody
+   <div class="pg-bkg"></div>
+
+# CSS
+.pg-bkg {
+  background: url('https://cdn.shopify.com/s/files/1/0678/6862/2893/files/website-background-1080-1920-72-5.png?v=1746113158');
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  display: block !important;
+  background-size: cover;
+  background-position: center;
+}
+
+# Customizer custom CSS to see the background image
+.gradient {
+  background: transparent;
+}
+
+# Notes - use the colot scheme to make the background transparent to take away the border lines
+
