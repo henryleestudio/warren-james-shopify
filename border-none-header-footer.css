@@ -1,0 +1,16 @@
+/* HEADER */
+ in the Custom CSS
+hr {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 0px !important;
+}
+
+.footer__content-bottom {
+    border-top: solid 0 !importantw;
+}
+
