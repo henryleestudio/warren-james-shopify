@@ -1,0 +1,13 @@
+.menu-drawer {
+  background-color: #ece4d6;
+}
+.section-header.menu-open header {
+  background-color: #ece4d6;
+}
+.menu-drawer__menu-item {
+  color: #000;
+}
+
+// can also have a background iamge
+
+background-image: url("https://cdn.shopify.com/s/files/1/0744/8831/6145/files/website-bg-2.webp?v=1749082331");
