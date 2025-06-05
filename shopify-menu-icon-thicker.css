@@ -1,0 +1,6 @@
+/* Can place in header customizer css section */
+
+.header__icon svg path {
+  stroke-width: 0.5px;
+  stroke: #000;
+}
