@@ -1,0 +1,12 @@
+/* in the header customizer section */
+
+.gradient {
+  background: transparent;
+}
+.header {
+  position: absolute;
+  width: 100%;
+}
+hr {
+  display: none;
+}
