@@ -1,0 +1,12 @@
+/* place in custom code file */
+
+body:has(.scrolled-past-header) .header__heading-logo-wrapper img{
+display:none
+
+/* to hide other elements */
+
+body:has(.scrolled-past-header) .header__heading,
+body:has(.scrolled-past-header) .header__search,
+body:has(.scrolled-past-header) .header__icons{
+display:none
+}
