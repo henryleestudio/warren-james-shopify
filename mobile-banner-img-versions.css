@@ -1,15 +1,23 @@
-Show on desktop only css
+/* Show on desktop only css */
+
 @media screen and (max-width: 750px) {
   .banner, slideshow-component {
     display: none;
   }
 }
+/* hide black overlay color */
+.media {
+  background-color: #ff000000;
+}
 
 
-Show on mobile only css
+/* Show on mobile only css */
 
 @media screen and (min-width: 750px) {
   .banner, slideshow-component {
     display: none;
   }
+}
+.media {
+  background-color: #ff000000;
 }
