@@ -1,0 +1,10 @@
+/* In header custom css section */
+hr {
+  display: none;
+}
+
+
+/* In footer custom section */
+.footer__content-bottom {
+  border-top: solid 0rem rgba(var(--color-foreground), 0.08);
+}
