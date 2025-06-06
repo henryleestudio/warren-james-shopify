@@ -1,5 +1,5 @@
 /* NO COLOR OVERLAY */
 /* Make the banner height "Adapt to first image" */
-.media {
-    background-color: #ff000000;
+.banner:after, .banner__media:after {
+display: none;
 }
