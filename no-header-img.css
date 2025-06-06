@@ -1,0 +1,11 @@
+/* can place in customizer section */
+
+.header img {
+  display: none;
+}
+
+/* For password page */
+
+.password-header img {
+  display: none;
+}
