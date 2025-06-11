@@ -1,0 +1,11 @@
+/* home page */
+
+.header__heading-logo-wrapper img {
+  display: none;
+}
+
+/* password page */
+
+.password-header img {
+  display: none;
+}
