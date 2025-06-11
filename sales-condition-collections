@@ -1,0 +1,21 @@
+   {% assign check_coll = false %}
+                {% for coll in product.collections %}
+                  {% if coll.title == 'Season 1' or coll.title == 'Season 3' %}
+                    {% assign check_coll = true %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                    
+                {% if check_coll == true %}
+                  
+                  <x-flex direction="row" jc="end">
+                  {%- if settings.cardSaleType == 'label' or settings.cardSaleType == 'both' -%}
+                    <span class="product-badge sale">{{ 'product.sale' | t }}</span>
+                  {%- endif -%}
+
+                  {%- if settings.cardSaleType == 'percentage' or settings.cardSaleType == 'both' -%}
+                    <span class="sale-percentage product-badge sale"> {{ discount }} OFF</span>
+                  {%- endif -%}
+                    </x-flex>
+            
+                {% endif %}
