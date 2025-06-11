@@ -1,0 +1,3 @@
+.password-header img {
+  display: none;
+}
