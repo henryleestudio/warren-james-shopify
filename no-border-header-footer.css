@@ -8,3 +8,7 @@ hr {
 .footer__content-bottom {
   border-top: solid 0rem rgba(var(--color-foreground), 0.08);
 }
+
+.footer {
+    border-top: none
+}
