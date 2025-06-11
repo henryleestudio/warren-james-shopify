@@ -10,5 +10,5 @@ hr {
 }
 
 .footer {
-    border-top: none
+    border-top: none !important;
 }
