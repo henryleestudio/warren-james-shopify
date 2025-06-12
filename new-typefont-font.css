@@ -1,0 +1,15 @@
+/* typogaphy */
+
+ @font-face {
+   src: url('https://cdn.shopify.com/s/files/1/0934/2802/3617/files/YouTubeSansDarkRegular.otf?v=1749763482');
+   font-family: 'YouTube'';
+ }
+ @font-face {
+   src: url('https://cdn.shopify.com/s/files/1/0934/2802/3617/files/YouTubeSansDarkSemibold.otf?v=1749763482');
+   font-family: 'YouTube-header';
+ }
+
+:root { 
+  --font-body-family: 'YouTube', sans-serif !important;
+  --font-heading-family: 'YouTube-header', sans-serif !important; 
+}
