@@ -1,0 +1,23 @@
+<div class="video-container">
+
+<video class="hero-vid" loop="true" controls="false" autoplay="autoplay" controls muted>
+  <source src="https://cdn.shopify.com/videos/c/o/v/c08e003027df4757afcd43b0028e5888.mp4" type="video/mp4" />
+   type="video/webm" alt="Hero Image" />
+</video>
+</div>
+
+
+
+
+// CSS
+
+  .video-container {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.hero-vid {
+  width: 94%;
+  height: 100%;
+}
