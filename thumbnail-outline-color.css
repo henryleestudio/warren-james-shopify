@@ -1,0 +1,6 @@
+/* could go in custom.css */
+
+.thumbnail[aria-current] {
+    box-shadow: 0 0 0 .1rem rgb(var(--color-foreground));
+    border-color: rgb(var(--color-foreground));
+}
