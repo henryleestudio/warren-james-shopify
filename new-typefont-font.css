@@ -1,15 +1,22 @@
-/* typogaphy */
+/* TYPEOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://use.typekit.net/kzd8rfh.css");
 
- @font-face {
-   src: url('https://cdn.shopify.com/s/files/1/0934/2802/3617/files/YouTubeSansDarkRegular.otf?v=1749763482');
-   font-family: 'YouTube'';
+@font-face {
+   src: url("https://use.typekit.net/kzd8rfh.css");
+font-family: "logic-monospace", mono;
+font-weight: 400;
+font-style: normal;
  }
  @font-face {
-   src: url('https://cdn.shopify.com/s/files/1/0934/2802/3617/files/YouTubeSansDarkSemibold.otf?v=1749763482');
-   font-family: 'YouTube-header';
+   src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  font-family: 'manrope';
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: 800;
  }
 
 :root { 
-  --font-body-family: 'YouTube', sans-serif !important;
-  --font-heading-family: 'YouTube-header', sans-serif !important; 
+  --font-body-family: mono, sans-serif !important;
+  --font-heading-family: 'manrope', sans-serif !important; 
 }
