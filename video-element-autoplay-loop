@@ -11,13 +11,20 @@
 
 // CSS
 
-  .video-container {
-  background-color: #000;
+.video-container {
   display: flex;
   justify-content: center;
+  height: 100%; 
   width: 100%;
+  position: fixed;
+  object-fit: cover;
+  
+  
 }
 .hero-vid {
-  width: 94%;
-  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%; 
+  width: 100%;
 }
