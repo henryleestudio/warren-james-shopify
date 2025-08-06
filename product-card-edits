@@ -1,0 +1,12 @@
+/* add to custom.css */
+
+.card .card__inner .card__media {
+    border-radius: 40px !important;
+}
+
+.card, .card--standard, .card--media {
+  border-radius: 40px !important;
+  border: 7px solid #ffb2e3 !important;
+  box-shadow: 0px 5px 10px #811c529c !important;
+  background-color: #fff;
+}
