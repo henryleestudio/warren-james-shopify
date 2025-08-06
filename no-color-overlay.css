@@ -3,3 +3,9 @@
 .banner:after, .banner__media:after {
 display: none;
 }
+
+/* The above didn't work last time I tried it */
+
+media {
+    background: #00000000;
+}
