@@ -1,0 +1,11 @@
+/* add to custom.css */
+
+.collection .card__inner {
+    background: url(https://cdn.shopify.com/s/files/1/0668/1319/8405/files/wbn-product-wht-6.png?v=1755744494) !important;
+    background-size: cover !important;
+}
+
+.product__media.media {
+    background: url(https://cdn.shopify.com/s/files/1/0668/1319/8405/files/wbn-product-wht-6.png?v=1755744494) !important;
+    background-size: cover !important;
+}
