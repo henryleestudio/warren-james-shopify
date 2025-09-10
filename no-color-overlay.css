@@ -6,6 +6,6 @@ display: none;
 
 /* The above didn't work last time I tried it */
 
-media {
+.media {
     background: #00000000;
 }
