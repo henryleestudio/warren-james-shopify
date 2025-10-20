@@ -1,0 +1,39 @@
+{% comment %} ADD THIS TO SNIPPET — CARD-PRODUCT.LIQUID {% endcomment %}
+
+<div class="card__badge {{ settings.badge_position }}">
+            {%- if card_product.available == false -%}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+              >
+                {{- 'products.product.sold_out' | t -}}
+              </span>
+              
+              {% comment %} START CUSTOM CODE {% endcomment %}
+              
+                           {%- elsif card_product.tags contains 'november' -%}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge fiz-badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+              >
+                {{ 'November Delivery' }}
+              </span>
+                        {%- elsif card_product.tags contains 'fizz' -%}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge fiz-badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+              >
+                {{ 'Buy More, Save More' }}
+              </span>
+
+              {% comment %} END CUSTOM CODE {% endcomment %}
+              
+            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+              <span
+                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+              >
+                {{- 'products.product.on_sale' | t -}}
+              </span>
+            {%- endif -%}
+          </div>
