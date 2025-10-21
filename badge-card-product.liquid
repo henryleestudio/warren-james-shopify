@@ -56,3 +56,50 @@
               >
                 {{- discount_percentage -}}% OFF
               </span>
+
+              {% comment %} For PDP badge make sure Badges are 'true' in main.product.liquid section. Add the following code to price.liquid snippet {% endcomment %}
+
+             
+{% comment %}     
+    {%- if show_badges -%}
+      
+      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+        {{ 'products.product.on_sale' | t }}
+      </span>
+
+      <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+        {{ 'products.product.sold_out' | t }}
+      </span>
+
+      
+    {%- endif -%} {% endcomment %}
+  </div>
+{% endunless %}
+
+
+{%- if show_badges -%}
+
+  {%- if product.available == false -%}
+    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+      {{ 'products.product.sold_out' | t }}
+    </span>
+
+  {%- elsif product.compare_at_price > product.price -%}
+    <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+      {{ 'products.product.on_sale' | t }}
+    </span>
+
+  {%- elsif product.tags contains 'november' -%}
+    <span class="badge november-badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+      November Delivery
+    </span>
+
+  {%- elsif product.tags contains 'fizz' -%}
+    <span class="badge fiz-badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+      Buy More, Save More
+    </span>
+
+  {%- endif -%}
+
+{%- endif -%}
+
