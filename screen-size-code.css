@@ -1,0 +1,13 @@
+
+/* Can add to the customizer's css sections or custom.css section */
+
+@media (min-width: 767px) {
+  .img-container img {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .img-container img {
+    width: 50%;
+  }
+}
