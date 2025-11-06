@@ -1,11 +1,14 @@
 
 /* Can add to the customizer's css sections or custom.css section */
 
+/* Desktop screen */
 @media (min-width: 767px) {
   .img-container img {
     width: 350px;
   }
 }
+
+/* Mobile screen */
 @media (max-width: 767px) {
   .img-container img {
     width: 50%;
