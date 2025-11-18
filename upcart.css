@@ -1,3 +1,11 @@
+/* add to the upcart custom css feild  */
+
+/* the you cart is empty text */
+
+.styles_CartPreview__empty__ h3 {
+    color: #A02578 !important;
+}
+
 /* UpCart code snippets */
 
 #CartPopup h3 {
