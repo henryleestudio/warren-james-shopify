@@ -1,0 +1,36 @@
+<div class="banner">
+    <!-- Background GIF -->
+    <img src="https://cdn.shopify.com/s/files/1/0678/6862/2893/files/br_b-star-banner-7.gif?v=1759449747">
+
+    <!-- PNG Overlay -->
+    <img src="https://cdn.shopify.com/s/files/1/0678/6862/2893/files/br_b-star-banner-10.png?v=1759450711" class="overlay">
+</div>
+
+  <!-- CSS -->
+
+  .gradient {
+  background: transparent !important;
+}
+.banner {
+  position: relative; /* creates a "layered" context */
+  width: 100%;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto; /* keeps aspect ratio */
+  display: block;
+}
+.banner .overlay {
+  position: absolute; /* sits on top of the GIF */
+  top: 0;
+  left: 0;
+  width: 100%; /* make overlay match width */
+  height: auto; /* scale proportionally */
+  pointer-events: none; /* clicks pass through overlay if needed */
+}
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
