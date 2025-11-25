@@ -1,0 +1,39 @@
+<!-- SOCIAL HEADER OVERLAY -->
+<div class="social-header-overlay">
+  <img src="https://cdn.shopify.com/s/files/1/0719/3945/7207/files/FacebookHPLeft_1.png?v=1764035739"
+       alt="Left Overlay"
+       class="overlay-left">
+
+  <img src="https://cdn.shopify.com/s/files/1/0719/3945/7207/files/FacebookHPRight_1.png?v=1764035738"
+       alt="Right Overlay"
+       class="overlay-right">
+</div>
+
+<style>
+/* ===== SOCIAL MEDIA STYLE HEADER OVERLAY ===== */
+.social-header-overlay {
+  position: absolute;
+  top: 8px;            /* distance from top of card */
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  pointer-events: none; /* prevents blocking clicks */
+}
+
+.social-header-overlay img {
+  height: 45px;        /* adjust size if needed */
+  width: auto;
+}
+
+.overlay-left {
+  transform: translateY(0);
+}
+
+.overlay-right {
+  transform: translateY(0);
+}
+</style>
+
