@@ -1,9 +1,17 @@
-.menu-drawer {
-  background-color: #ece4d6;
-}
+// drawer header bg color
+
 .section-header.menu-open header {
   background-color: #ece4d6;
 }
+
+// menu open bg color
+
+.menu-drawer {
+  background-color: #ece4d6;
+}
+
+// menu open text color
+
 .menu-drawer__menu-item {
   color: #000;
 }
