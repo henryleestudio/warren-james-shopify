@@ -1,7 +1,7 @@
 <div class="video-container">
 
 <video class="hero-vid" loop="true" autoplay="autoplay" muted>
-  <source src="https://cdn.shopify.com/videos/c/o/v/c08e003027df4757afcd43b0028e5888.mp4" type="video/mp4" />
+  <source src="https://cdn.shopify.com/videos/c/o/v/c08e003027df4757afcd43b0028e5888.mp4" type="video/mp4"
    type="video/webm" alt="Hero Image" />
 </video>
 </div>
@@ -18,8 +18,7 @@
   width: 100%;
   position: fixed;
   object-fit: cover;
-  
-  
+  z-index: -10;
 }
 .hero-vid {
   object-fit: cover;
