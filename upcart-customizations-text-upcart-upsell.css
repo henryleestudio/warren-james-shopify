@@ -1,0 +1,11 @@
+.upcart-internal-component-upsell-tile__info * {
+    color: #ffffff !important;
+}
+
+.upcart-internal-component-upsell-tile__variant-row * {
+    color: #242A37 !important;
+}
+
+.upcart-internal-component-upsell-tile {
+    border-radius: 0px !important;
+}
