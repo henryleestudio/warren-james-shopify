@@ -1,0 +1,15 @@
+<!-- On line 166 between span and elsif -->
+
+ {%- elsif card_product.tags contains 'pre-order' -%}
+              <div class="timesact-badge-ribbon timesact-badge-ribbon-preorder" style="position: absolute; top: -5px; right: -5px; width: 75px; height: 75px; text-align: right; z-index: 1; overflow: hidden;">
+                <span
+                  id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                  class="timesact-badge-ribbon-span-preorder color-{{ settings.sale_badge_color_scheme }}"
+                  style="position: absolute; top: 19px; right: -20px; display: block; width: 100px; font-size: 10px; font-weight: bold; color: rgb(255, 255, 255); text-transform: uppercase; text-align: center; line-height: 20px; white-space: nowrap; transform: rotate(45deg); background-color: rgb(121, 167, 10); box-shadow: rgb(0, 0, 0) 0px 3px 10px -5px;"
+                >
+                  {{ 'Pre-order' }}
+                </span>
+              </div>
+
+
+  <!-- Dont need to use the style property -->
