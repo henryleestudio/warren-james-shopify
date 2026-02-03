@@ -1,0 +1,6 @@
+.card__badge,
+.badge--sold-out {
+  background-color: #F7B1CA !important; /* pink */
+  border-color: #F7B1CA !important;
+  color: #F7B1CA !important; /* text color */
+}
