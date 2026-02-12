@@ -1,32 +1,21 @@
 /* for custom.css file */
 
+/* Featured collection */
 .card__media {
-    border: 1px solid #1A2D2F;
-    border-radius: 13px 13px 0px 0px !important;
+    border: 1px solid #ffff;
+    border-radius: 13px 13px 13px 13px !important;
 }
-.product-card-wrapper .card__content.card-footer::before {
-    margin: var(--pc-card-border-width);
-    border: 1px solid #1A2D2F;
-    border-top: none !imporant;
-    /* border-radius: 0px 0px 13px 13px !important; */
+/* PDP */
+.product-media-container .media {
+    border: 1px solid #ffff;
+    border-radius: 13px 13px 13px 13px !important;
 }
-
-    .product-card-wrapper .card__content.card-footer::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      background: rgb(255 255 255 / 70%);
-      border-bottom-left-radius: none !important;
-      border-bottom-right-radius: none !important;
-      border-top-left-radius: none !important;
-      border-top-right-radius: none !important;
-      border: 1px solid #1A2D2F !important;
-    }
-
-
-/* product card border radius  */
-
-.card.card--standard.card--media, product-recommendations .card--media {
-      border-radius: 0px !important;
+  
+/* 1) Kill the grey edge from inner wrappers + overlays */
+.product-card-wrapper .card__inner,
+.product-card-wrapper .card__inner-color,
+.product-card-wrapper  {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 0 !important;
 }
