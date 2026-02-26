@@ -19,3 +19,14 @@
   outline: none !important;
   border: 0 !important;
 }
+
+/* This worked for BR&B for the grey border —  */
+.global-media-settings {
+    border: none !important;
+}
+
+/* Frame ONLY the actual featured product media */
+.product__media img {
+  border: 2px solid #b3261e;
+  border-radius: 20px;
+}
