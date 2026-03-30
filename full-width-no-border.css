@@ -1,0 +1,12 @@
+.section:has(#desktop-banner),
+.section:has(#mobile-banner) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.section:has(#desktop-banner) .page-width,
+.section:has(#mobile-banner) .page-width {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: 100% !important;
+}
