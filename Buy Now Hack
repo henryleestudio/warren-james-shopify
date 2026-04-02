@@ -1,0 +1,114 @@
+1) Update the button text
+
+Open:
+
+snippets/buy-buttons.liquid
+
+Find this block:
+
+{%- else -%}
+  {{ 'products.product.add_to_cart' | t }}
+{%- endif -%}
+
+Replace it with:
+
+{%- else -%}
+  Buy Now
+{%- endif -%}
+
+If you want, you can keep the original translation and only show Buy Now on this product later, but this is the fastest version.
+
+2) Redirect to checkout instead of cart
+
+Open:
+
+assets/product-form.js
+
+Find this section:
+
+} else if (!this.cart) {
+  window.location = window.routes.cart_url;
+  return;
+}
+
+Replace it with:
+
+} else if (!this.cart) {
+  window.location = '/checkout';
+  return;
+}
+
+That is the key change.
+
+3) Optional: turn off cart drawer behavior too
+
+Right now, if a cart drawer exists, the theme will still render the drawer instead of redirecting.
+
+In the same file, find this block near the bottom of the success path:
+
+const quickAddModal = this.closest('quick-add-modal');
+if (quickAddModal) {
+  document.body.addEventListener(
+    'modalClosed',
+    () => {
+      setTimeout(() => {
+        CartPerformance.measure("add:paint-updated-sections", () => {
+          this.cart.renderContents(response);
+        });
+      });
+    },
+    { once: true }
+  );
+  quickAddModal.hide(true);
+} else {
+  CartPerformance.measure("add:paint-updated-sections", () => {
+    this.cart.renderContents(response);
+  });
+}
+
+Replace that whole block with:
+
+window.location = '/checkout';
+return;
+
+That makes the behavior consistent:
+
+selected bundle variant gets added
+selected quantity gets added
+customer goes straight to checkout
+
+This is the version I’d use for your store.
+
+Best final version for your file
+
+Inside assets/product-form.js, after this line:
+
+} else if (!this.cart) {
+  window.location = '/checkout';
+  return;
+}
+
+replace the drawer-render section with:
+
+window.location = '/checkout';
+return;
+
+So the success path always goes to checkout.
+
+Important test after editing
+
+Do these 4 checks:
+
+Select 2x Pick Maker (Most Popular)
+Change quantity to 2
+Click Buy Now
+Confirm checkout shows:
+correct bundle variant
+correct quantity
+no cart step in between
+
+If quantity or variant fails, then we tighten it further, but Dawn usually handles this correctly because the form already submits the active variant and quantity.
+
+One caution
+
+If you still have the dynamic checkout button enabled anywhere, turn it off in the theme editor so it does not conflict with your custom Buy Now flow.
