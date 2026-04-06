@@ -33,9 +33,51 @@ Find this section:
 
 Replace it with:
 
-} else if (!this.cart) {
-  window.location = '/checkout';
-  return;
+async handleSubmit(evt) {
+  evt.preventDefault();
+
+  if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+
+  this.handleErrorMessage();
+
+  this.submitButton.setAttribute('aria-disabled', true);
+  this.submitButton.classList.add('loading');
+  this.querySelector('.loading__spinner').classList.remove('hidden');
+
+  const formData = new FormData(this.form);
+
+  try {
+    await fetch('/cart/clear.js', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json'
+      }
+    });
+
+    const addResponse = await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json'
+      },
+      body: formData
+    });
+
+    const addResult = await addResponse.json();
+
+    if (addResult.status) {
+      this.handleErrorMessage(addResult.description || 'Something went wrong.');
+      return;
+    }
+
+    window.location.href = '/checkout';
+  } catch (error) {
+    console.error(error);
+    this.handleErrorMessage('Something went wrong. Please try again.');
+  } finally {
+    this.submitButton.classList.remove('loading');
+    this.querySelector('.loading__spinner').classList.add('hidden');
+    this.submitButton.removeAttribute('aria-disabled');
+  }
 }
 
 That is the key change.
