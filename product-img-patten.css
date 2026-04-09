@@ -1,0 +1,12 @@
+.card.card--standard.card--media,
+product-recommendations .card--media {
+    background: transparent !important;
+}
+.grid__item:nth-of-type(odd) .card--card .card__inner .card__media, .product__media-item:nth-of-type(odd) .product__media.media {
+  background: url(https://cdn.shopify.com/s/files/1/0815/3638/5317/files/yellow-bkg.png?v=1775235309) !important;
+  background-size: cover !important;
+}
+.grid__item:nth-of-type(even) .card--card .card__inner .card__media, .product__media-item:nth-of-type(even) .product__media.media {
+  background: url(https://cdn.shopify.com/s/files/1/0815/3638/5317/files/blue-bkg.png?v=1775235181) !important;
+  background-size: cover !important;
+}
