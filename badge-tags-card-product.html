@@ -13,3 +13,15 @@
 
 
   <!-- Dont need to use the style property -->
+
+<!-- This goes in around 
+
+{%- capture badge -%}
+                {%- if card_product.available == false -%}
+                  <span
+                    id="Badge-{{ section_id }}-{{ card_product.id }}"
+                    class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+                  >
+
+etc 
+and may not need the div -->
