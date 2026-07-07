@@ -1,0 +1,5 @@
+.card__inner {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
