@@ -1,3 +1,15 @@
+/* for the product page */
+
 .product-media-container {
   border: none !important;
+}
+
+/* for the featured product section */
+/* custom.css */
+
+.shopify-section[id*="featured"] * {
+  border-top: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
 }
