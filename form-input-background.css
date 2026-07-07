@@ -1,0 +1,8 @@
+input,
+select {
+    background: #D7D2C4 !important;
+    color: #121212 !important;
+}
+.field__input, .select__select, .customer .field input, .customer select {
+    color: rgb(var(--color-foreground));
+}
