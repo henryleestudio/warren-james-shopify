@@ -1,0 +1,14 @@
+      {% if collection.handle == 'dm-x-creep-collection' %}
+        <style>
+          .bkg-static {
+              background-image: url('https://cdn.shopify.com/s/files/1/0665/5931/2044/files/creep-merch-background-1.webp?v=1784736345') !important;
+              background-size: cover;
+              position: fixed;
+              width: 100%;
+              z-index: -1;
+              display: block !important;
+              background-position: center;
+              height: 100%;
+          }    
+        </style> 
+      {% endif %}
